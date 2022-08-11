@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 
 export type ThemeContextProps = {
   theme: string;
-  setTheme: (theme: any) => void;
+  setTheme: React.Dispatch<React.SetStateAction<string>>;
 };
 
 export const ThemeContext = createContext<ThemeContextProps>({

@@ -7,7 +7,6 @@ import {
 } from "@heroicons/react/solid";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { ReactComponent as Logo } from "../assets/logo.svg";
 import { useTheme } from "../context/ThemeProvider";
 import { MENU, NAME } from "../data/data";
 import { NavbarProps } from "../types/types";
@@ -19,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuShow, showMenu }) => {
   const { setTheme } = useTheme();
   useEffect(() => {
     listener = document.addEventListener("scroll", () => {
-      var scrolled = document.scrollingElement.scrollTop;
+      const scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 120) {
         if (!scrollState) {
           setScrollState(true);
@@ -37,11 +36,9 @@ const Navbar: React.FC<NavbarProps> = ({ menuShow, showMenu }) => {
   return (
     <>
       <div
-        className={`${
-          scrollState
-            ? `inset-x-0 top-0 z-50 w-full transition duration-300 ease-in-out border-b border-transparent bg-primary text-primary-content fixed   navbar`
-            : `fixed inset-x-0 top-0 z-50 w-full transition duration-300 ease-in-out bg-transparent border-b border-transparent text-primary-content navbar`
-        }`}
+        className={`fixed inset-x-0 top-0 z-50 w-full transition duration-300 ease-in-out border-b border-transparent ${
+          scrollState ? "bg-primary" : "bg-transparent"
+        } text-primary-content navbar`}
       >
         <div className=" dropdown dropdown-right lg:hidden">
           <div tabIndex={0} className="btn btn-ghost rounded-btn">
