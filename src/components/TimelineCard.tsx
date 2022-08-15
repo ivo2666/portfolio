@@ -13,11 +13,14 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
   logo,
   styling,
 }) => {
+  const even = num % 2 === 0;
   return (
     <div
-      className={`flex items-center justify-between w-full mb-8  ${styling}`}
+      className={`flex items-center justify-between w-full mb-8   sm:${
+        !even ? "flex-row-reverse" : ""
+      }`}
     >
-      <div className="order-1 w-5/12"></div>
+      <div className="hidden sm:block w-5/12 order-1 "></div>
       <div className="z-20 flex items-center order-1 w-8 h-8 bg-gray-800 rounded-full shadow-xl">
         <h1 className="mx-auto text-lg font-semibold text-white">{num}</h1>
       </div>
@@ -25,11 +28,18 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
         transition={{ duration: 0.25 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className={
-          num % 2 === 0
-            ? "order-1 w-5/12 shadow-2xl card lg:card-side bg-primary text-primary-content"
-            : "order-1 w-5/12 shadow-2xl card lg:card-side bg-secondary text-secondary-content"
-        }
+        drag
+        dragConstraints={{
+          top: -20,
+          left: -20,
+          right: 20,
+          bottom: 20,
+        }}
+        className={`w-10/12 sm:w-5/12 order-1 shadow-2xl card lg:card-side ${
+          even
+            ? "bg-primary text-primary-content"
+            : "bg-secondary text-secondary-content"
+        }`}
       >
         <div className="card-body">
           <img src={logo} alt={company} className="w-20" />

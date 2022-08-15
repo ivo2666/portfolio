@@ -61,9 +61,9 @@ export const EXPERIENCE: TimelineProps[] = [
 ];
 export const KEYWORDS = [
   "Developer",
-  "front end developer based in India",
-  "piyush mehta",
-  "Awesome Portfolio",
+  "front end developer based in Sofia",
+  "Ivaylo Tsvetkov",
+  "Portfolio",
 ];
 export const IMAGE: ImageType = {
   src: Image,

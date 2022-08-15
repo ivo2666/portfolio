@@ -1,11 +1,17 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false,
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      left: {
+        "1/6": "22%",
+      },
+      inset: {
+        '7%': '7%',
+      },
+      padding: {
+        "11": "11px"
+      } 
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
