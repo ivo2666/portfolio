@@ -18,8 +18,8 @@ const SkillsContainer: React.FC = () => {
             <div
               className={`p-6 space-y-2 artboard phone card ${
                 id % 2 === 0
-                  ? `bg-secondary text-secondary-content`
-                  : `bg-primary text-primary-content`
+                  ? `bg-neutral text-neutral-content`
+                  : `bg-base-300 text-base-content`
               }`}
             >
               <h3>{skill}</h3>

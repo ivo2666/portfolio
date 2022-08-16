@@ -38,7 +38,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
         className={`w-10/12 sm:w-5/12 order-1 shadow-2xl card lg:card-side ${
           even
             ? "bg-primary text-primary-content"
-            : "bg-secondary text-secondary-content"
+            : "bg-accent text-accent-content"
         }`}
       >
         <div className="card-body">

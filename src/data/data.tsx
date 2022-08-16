@@ -90,7 +90,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: newsApp,
     link: "https://github.com/ivo2666/news-app",
     buttonText: "View Project",
-    tech: ["React", "Mui", "Redux", "Redux-Saga"],
+    tech: ["React", "Mui", "Redux", "Saga"],
   },
   {
     id: 3,
@@ -100,7 +100,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: dealership,
     link: "https://github.com/ivo2666/car-dealership",
     buttonText: "View Project",
-    tech: ["React", "Express.js", "MongoDB", "React-Bootstrap"],
+    tech: ["React", "Express.js", "MongoDB", "Bootstrap"],
   },
 ];
 /**

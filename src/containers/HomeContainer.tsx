@@ -13,7 +13,7 @@ import SkillsContainer from "./SkillsContainer";
 
 const HomeContainer: React.FC = () => {
   return (
-    <div className="antialiased bg-primary-content text-primary">
+    <div className="antialiased bg-base-100 text-base-content">
       <Hero
         image={HERO_IMAGE}
         greetingText={GREETING_TEXT}

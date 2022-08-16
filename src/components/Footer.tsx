@@ -1,8 +1,7 @@
-import { HeartIcon } from "@heroicons/react/solid";
 import React from "react";
 import { Link } from "react-scroll";
 import { ReactComponent as Illustration } from "../assets/footer.svg";
-import { MENU, NAME } from "../data/data";
+import { MENU } from "../data/data";
 const Footer: React.FC = () => {
   return (
     <>
@@ -30,20 +29,6 @@ const Footer: React.FC = () => {
                 </Link>
               ))}
             </ul>
-          </div>
-          <div className="mb-3 text-md text-neutral-content">
-            <p>
-              © {new Date().getFullYear()} {NAME}. All rights reserved.
-            </p>
-            {/* DONOT Change this if you want to use this template */}
-            <p className="self-center justify-center text-center text-2xs font-extralight">
-              Theme designed and developed with
-              <HeartIcon className="inline-flex w-3 h-3 mx-0.5 mb-0.5" />
-              by{" "}
-              <span className="font-bold underline">
-                Piyush Mehta
-              </span>
-            </p>
           </div>
         </div>
       </div>

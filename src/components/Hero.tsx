@@ -13,7 +13,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <div
-      className="relative min-h-screen pt-0 mt-0 antialiased hero bg-gradient-to-br from-primary to-secondary text-primary-content"
+      className="relative min-h-screen pt-0 mt-0 antialiased hero bg-gradient-to-br from-primary to-accent text-base-100"
       id="home"
     >
       <div className="fill-current custom-shape-divider-bottom-1628871186">
@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({
         /> */}
         <img src={image} alt="person" className="max-w-xs drop-shadow-xl mx-auto rounded-2xl  relative lg:bottom-10"/>
 
-        <div className="max-w-md ml-10">
+        <div className="max-w-md ml-10 text-accent-content">
           <motion.div
             animate={{ scale: [0.5, 1] }}
             transition={{ duration: 0.5 }}

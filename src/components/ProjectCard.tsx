@@ -16,8 +16,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div
         className={`mx-3 sm:mx-6 card ${
           id % 2 === 0
-            ? `bg-secondary text-secondary-content`
-            : `bg-primary text-primary-content`
+            ? `bg-base-300 text-base-content`
+            : `bg-base-200 text-base-content`
         }`}
       >
         <figure className="p-6">
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <div
                 className={`my-2 mr-2 badge ${
                   id % 2 === 0
-                    ? `text-primary-content badge-primary`
+                    ? `text-neutral-content badge-neutral`
                     : `text-secondary-content badge-secondary`
                 }`}
               >
@@ -46,11 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="card-actions">
             <a href={link}>
               <button
-                className={`rounded-full btn ${
-                  id % 2 === 0
-                    ? `text-primary-content btn-primary`
-                    : `text-secondary-content btn-secondary`
-                }`}
+                className={`rounded-full btn btn-primary text-primary-content `}
               >
                 {buttonText}
               </button>
