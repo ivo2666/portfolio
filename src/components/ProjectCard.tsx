@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <motion.div transition={{ duration: 0.25 }} key={id}>
       <div
-        className={`mx-3 sm:mx-6 card ${
+        className={`max-w-85% mx-2 sm:mx-6 card ${
           id % 2 === 0
             ? `bg-base-300 text-base-content`
             : `bg-base-200 text-base-content`

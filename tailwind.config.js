@@ -10,7 +10,10 @@ module.exports = {
       },
       padding: {
         "11": "11px"
-      } 
+      }, 
+      maxWidth: {
+        "85%": "85%"
+      }, 
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

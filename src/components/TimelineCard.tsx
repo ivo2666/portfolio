@@ -28,13 +28,6 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
         transition={{ duration: 0.25 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        drag
-        dragConstraints={{
-          top: -20,
-          left: -20,
-          right: 20,
-          bottom: 20,
-        }}
         className={`w-10/12 sm:w-5/12 order-1 shadow-2xl card lg:card-side ${
           even
             ? "bg-primary text-primary-content"
