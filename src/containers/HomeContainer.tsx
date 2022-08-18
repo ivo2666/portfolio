@@ -10,6 +10,7 @@ import {
 import ExperienceContainer from "./ExperienceContainer";
 import ProjectsContainer from "./ProjectsContainer";
 import SkillsContainer from "./SkillsContainer";
+import AboutContainer from "./AboutContainer";
 
 const HomeContainer: React.FC = () => {
   return (
@@ -25,6 +26,8 @@ const HomeContainer: React.FC = () => {
       <ProjectsContainer />
       <div className="px-12 divider" />
       <SkillsContainer />
+      <div className="px-12 divider" />
+      <AboutContainer />
       <Footer />
     </div>
   );

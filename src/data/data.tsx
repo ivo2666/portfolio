@@ -1,10 +1,10 @@
 import Image from "../assets/social.jpg";
-import IHACLogo from '../assets/a-c-logo_adobe_express.svg'
-import PytecLogo from '../assets/pytec-logo.png'
-import SoftuniLogo from '../assets/softuni-logo.png'
-import newsApp from '../assets/news-app.png'
-import dealership from '../assets/dealership.png'
-import MyPic from '../assets/i.jpg'
+import IHACLogo from "../assets/a-c-logo_adobe_express.svg";
+import PytecLogo from "../assets/pytec-logo.png";
+import SoftuniLogo from "../assets/softuni-logo.png";
+import newsApp from "../assets/news-app.png";
+import dealership from "../assets/dealership.png";
+import MyPic from "../assets/i.jpg";
 
 import {
   ImageType,
@@ -16,7 +16,14 @@ import {
 export const URL = "https://portfolio-lac.vercel.app/";
 export const NAME = "Ivaylo Tsvetkov";
 
-export const SECTIONS = ["Home", "Experience", "Projects", "Skills"];
+export const SECTIONS = [
+  "Home",
+  "Experience",
+  "Projects",
+  "Skills",
+  "About",
+  "Contact",
+];
 export const HERO_IMAGE = MyPic;
 export const CTA_TEXT = "Know More";
 export const MENU: MenuProps[] = [
@@ -24,6 +31,8 @@ export const MENU: MenuProps[] = [
   { key: 2, route: "experience", name: SECTIONS[1] },
   { key: 3, route: "projects", name: SECTIONS[2] },
   { key: 4, route: "skills", name: SECTIONS[3] },
+  { key: 5, route: "about", name: SECTIONS[4] },
+  { key: 6, route: "contact", name: SECTIONS[5] },
 ];
 
 export const GREETING_TEXT = "Ivaylo";
@@ -38,7 +47,8 @@ export const EXPERIENCE: TimelineProps[] = [
     logo: IHACLogo,
     start: "2022-01",
     end: "present",
-    description: "Development of new features, fixing bugs & learning new things",
+    description:
+      "Development of new features, fixing bugs & learning new things",
   },
   {
     key: 2,
