@@ -57,7 +57,7 @@ export const EXPERIENCE: TimelineProps[] = [
     logo: PytecLogo,
     start: "2021-08",
     end: "2021-11",
-    description: "I worked on frontend of actual projects",
+    description: "Practis and learning new things",
   },
   {
     key: 3,
@@ -66,7 +66,7 @@ export const EXPERIENCE: TimelineProps[] = [
     logo: SoftuniLogo,
     start: "2019-02",
     end: "2020-08",
-    description: "I studied Javascript, ReactJS & NodeJS",
+    description: "Studied Javascript, ReactJS & NodeJS",
   },
 ];
 export const KEYWORDS = [

@@ -11,6 +11,7 @@ import ExperienceContainer from "./ExperienceContainer";
 import ProjectsContainer from "./ProjectsContainer";
 import SkillsContainer from "./SkillsContainer";
 import AboutContainer from "./AboutContainer";
+import ContactConrainer from "./ContactContainer";
 
 const HomeContainer: React.FC = () => {
   return (
@@ -28,6 +29,8 @@ const HomeContainer: React.FC = () => {
       <SkillsContainer />
       <div className="px-12 divider" />
       <AboutContainer />
+      <div className="px-12 divider" />
+      <ContactConrainer />
       <Footer />
     </div>
   );

@@ -16,8 +16,8 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
   const even = num % 2 === 0;
   return (
     <div
-      className={`flex items-center justify-between w-full mb-8   sm:${
-        !even ? "flex-row-reverse" : ""
+      className={`flex items-center justify-between w-full mb-8 ${
+        !even ? "sm:flex-row-reverse" : ""
       }`}
     >
       <div className="hidden sm:block w-5/12 order-1 "></div>
