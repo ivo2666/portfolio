@@ -1,5 +1,4 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import { URL } from "../data/data";
 import { SEOProps } from "../types/types";
 
@@ -15,7 +14,7 @@ const Seo: React.FC<SEOProps> = ({
 }) => {
   // const image = metaImage && metaImage.src ? `${metaImage.src}` : null;
   return (
-    <Helmet>
+<Helmet>
       <html data-theme={theme} data-react-helmet="true" />
       <title>{title}</title>
       <meta name="title" content={title} data-react-helmet="true" />

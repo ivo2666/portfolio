@@ -3,7 +3,6 @@ import React from "react";
 import { TimelineCardProps } from "../types/types";
 
 const TimelineCard: React.FC<TimelineCardProps> = ({
-  key,
   num,
   company,
   end,

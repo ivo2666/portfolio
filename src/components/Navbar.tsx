@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuShow, showMenu }) => {
           </div>
           <ul
             tabIndex={0}
-            className="p-2 shadow menu dropdown-content bg-base-100 text-neutral rounded-box w-52"
+            className="p-2 shadow menu dropdown-content bg-base-100 text-base-content rounded-box w-52"
           >
             {MENU.map(({ key, name, route }) => (
               <Link

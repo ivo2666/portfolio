@@ -20,8 +20,8 @@ const ExperienceContainer: React.FC = () => {
           ({ key, company, position, description, end, start, logo }) => (
             <AnimateVisible key={key}>
                   <TimelineCard
+                  key={key}
                     styling="right-timeline"
-                    key={key}
                     num={key}
                     logo={logo}
                     start={start}

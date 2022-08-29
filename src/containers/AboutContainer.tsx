@@ -64,7 +64,7 @@ const AboutContainer: React.FC = () => {
                 className="w-4 text-inherit "
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 1024 1024"
                 height="1em"
                 width="1em"

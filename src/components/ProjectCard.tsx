@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   id,
 }) => {
   return (
-    <motion.div transition={{ duration: 0.25 }} key={id}>
+    <motion.div transition={{ duration: 0.25 }}>
       <div
         className={`max-w-85% mx-2 sm:mx-6 card ${
           id % 2 === 0
@@ -31,8 +31,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <h2 className="card-title ">{projectName}</h2>
           <p>{projectDescription}</p>
           <div className="flex">
-            {tech.map((tech) => (
+            {tech.map((tech, index) => (
               <div
+                key={index}
                 className={`my-2 mr-2 badge ${
                   id % 2 === 0
                     ? `text-neutral-content badge-neutral`
