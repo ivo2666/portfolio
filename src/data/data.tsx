@@ -43,7 +43,7 @@ export const EXPERIENCE: TimelineProps[] = [
   {
     key: 1,
     company: "IH Adventure & Creative",
-    position: "Front-End Developer",
+    position: "React Developer",
     logo: IHACLogo,
     start: "2022-01",
     end: "present",
@@ -53,7 +53,7 @@ export const EXPERIENCE: TimelineProps[] = [
   {
     key: 2,
     company: "Pytek",
-    position: "Front-end Developer Intern",
+    position: "React Developer Intern",
     logo: PytecLogo,
     start: "2021-08",
     end: "2021-11",
