@@ -38,7 +38,7 @@ export const MENU: MenuProps[] = [
 
 export const GREETING_TEXT = "Ivaylo";
 export const GREETING_DESCRIPTION =
-  "Positive, results-oriented person, with attention to detail and a desire for development. ";
+  "Positive, persistent and results-oriented React developer who never gives up ";
 
 export const EXPERIENCE: TimelineProps[] = [
   {
