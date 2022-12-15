@@ -2,8 +2,6 @@
 
 # Portfolio
 
-A template for all of you to create and deploy an Portfolio 
-
 ## Tech Stack
 
 **Client:** NodeJs, React, Typescript, TailwindCSS

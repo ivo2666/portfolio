@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { ReactComponent as Illustration } from "../assets/footer.svg";
 import { MENU } from "../data/data";
 const Footer: React.FC = () => {
   return (
     <>
       <div className="px-0 py-0 mx-0 my-0 antialiased text-center">
-        <Illustration />
-        <div className="flex flex-col pt-3 bg-current md:items-center f-f-l">
+        <div className="flex flex-col pt-3 mt-5 md:items-center f-f-l bg-neutral text-neutral-content">
           <h1 className="text-4xl font-black text-neutral-content">
             Ivaylo Tsvetkov
           </h1>

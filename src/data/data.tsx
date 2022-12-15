@@ -4,6 +4,7 @@ import PytecLogo from "../assets/pytec-logo.png";
 import SoftuniLogo from "../assets/softuni-logo.png";
 import newsApp from "../assets/news-app.png";
 import dealership from "../assets/dealership.png";
+import cookingApp from "../assets/cooking-app.png";
 import MyPic from "../assets/i.jpg";
 
 import {
@@ -21,8 +22,8 @@ export const SECTIONS = [
   "Experience",
   "Projects",
   "Skills",
-  "About",
-  "Contact",
+  "About Me",
+  "Contact Me",
 ];
 export const HERO_IMAGE = MyPic;
 export const CTA_TEXT = "Know More";
@@ -43,21 +44,21 @@ export const EXPERIENCE: TimelineProps[] = [
   {
     key: 1,
     company: "IH Adventure & Creative",
-    position: "Front-End Developer",
+    position: "React Developer",
     logo: IHACLogo,
     start: "2022-01",
-    end: "present",
+    end: "2022-08",
     description:
-      "Development of new features, fixing bugs & learning new things",
+      "Development of new features with React, Typescript, TailwindCSS, fixing bugs & learning new things",
   },
   {
     key: 2,
     company: "Pytek",
-    position: "Front-end Developer Intern",
+    position: "React Developer Intern",
     logo: PytecLogo,
     start: "2021-08",
     end: "2021-11",
-    description: "Practis and learning new things",
+    description: "Developing new features with React, React Native, Redux, Typescript and MUI",
   },
   {
     key: 3,
@@ -83,6 +84,16 @@ export const IMAGE: ImageType = {
 
 export const projects: ProjectCardProps[] = [
   {
+    id: 4,
+    projectName: "Cooking - App",
+    projectDescription:
+      "A React application with cooking recipes that we can filter by products",
+    projectImageLogo: cookingApp,
+    link: "https://github.com/ivo2666/cooking-app",
+    buttonText: "View Project",
+    tech: ["React", "Typescript", "TailwindCSS", "Vercel Functions"],
+  },
+  {
     id: 1,
     projectName: "Portfolio",
     projectDescription:
@@ -100,7 +111,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: newsApp,
     link: "https://github.com/ivo2666/news-app",
     buttonText: "View Project",
-    tech: ["React", "Mui", "Redux", "Saga"],
+    tech: ["React", "Mui", "Redux", "Redux Saga"],
   },
   {
     id: 3,

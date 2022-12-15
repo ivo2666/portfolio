@@ -30,11 +30,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="max-w-sm card-body">
           <h2 className="card-title ">{projectName}</h2>
           <p>{projectDescription}</p>
-          <div className="flex">
+          <div className="flex flex-wrap items-center">
             {tech.map((tech, index) => (
               <div
                 key={index}
-                className={`my-2 mr-2 badge ${
+                className={`my-2 mr-2 badge p-3 ${
                   id % 2 === 0
                     ? `text-neutral-content badge-neutral`
                     : `text-secondary-content badge-secondary`
