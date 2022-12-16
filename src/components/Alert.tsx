@@ -1,24 +1,37 @@
-import { CheckCircleIcon, ExclamationCircleIcon } from "@heroicons/react/outline";
+import {
+  CheckCircleIcon,
+  ExclamationCircleIcon,
+} from "@heroicons/react/outline";
+
+interface AlertWrapperProps {
+  type: "success" | "error" | "none";
+  children: JSX.Element;
+}
 
 export interface AlertProps {
-  flag: "warning" | "success" | "error" | "none";
+  type: AlertWrapperProps["type"];
   message: string;
 }
 
-const variant = {
-  success: <CheckCircleIcon className="w-5"/>  ,
-  error: <ExclamationCircleIcon className="w-5"/>,
-  warning: <ExclamationCircleIcon className="w-5"/>
+const AlertWrapper: React.FC<AlertWrapperProps> = ({ children, type }) => {
+  if (type === "success") {
+    return <div className="mt-5 shadow-lg alert alert-success">{children}</div>;
+  }
+  return <div className="mt-5 shadow-lg alert alert-error">{children}</div>;
 };
 
-const Alert: React.FC<AlertProps> = ({ flag, message }) => {
+const Alert: React.FC<AlertProps> = ({ message, type }) => {
   return (
-    <div className={`alert alert-${flag} shadow-lg ${flag === "none" ? "hidden": ""}`}>
+    <AlertWrapper type={type}>
       <div>
-        {variant[flag]}
-        <span className="font-bold uppercase">{message}</span>
+        {type === "success" ? (
+          <CheckCircleIcon className="w-5" />
+        ) : (
+          <ExclamationCircleIcon className="w-5" />
+        )}
+        <span>{message}</span>
       </div>
-    </div>
+    </AlertWrapper>
   );
 };
 

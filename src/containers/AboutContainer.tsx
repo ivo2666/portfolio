@@ -16,13 +16,13 @@ const AboutContainer: React.FC = () => {
         illustration={<Illustration className="mx-auto max-h-48" />}
       />
       <div className="relative mt-5 rounded-lg sm:mx-10 wrap bg-base-200">
-        <div className="p-7 ">
+        <div className="p-7">
                 <a
                   className="transition duration-300 hover:text-secondary-focus"
                   href="tel:+359887882263"
                 >
-          <div className="pb-2.5 border-b border-base-300 flex items-center">
-            <span className="inline-block p-3 rounded-lg bg-base-100 hover:bg-primary text-primary hover:text-base-100">
+          <div className="pb-2.5 border-b border-base-300 flex items-center group">
+            <span className="inline-block p-3 rounded-lg bg-base-100 group-hover:bg-primary text-primary group-hover:text-base-100">
               <DeviceMobileIcon className="w-4 text-inherit" />
             </span>
             <div className="text-left ml-2.5 ">
@@ -37,8 +37,8 @@ const AboutContainer: React.FC = () => {
                   className="transition duration-300 hover:text-secondary-focus"
                   href="mailto:ivaylotsvetkov365@gmail.com"
                 >
-          <div className="py-2.5 border-b border-base-300 flex items-center">
-            <span className="inline-block p-3 rounded-lg bg-base-100 hover:bg-secondary text-secondary hover:text-base-100">
+          <div className="py-2.5 border-b border-base-300 flex items-center group">
+            <span className="inline-block p-3 rounded-lg bg-base-100 group-hover:bg-secondary text-secondary group-hover:text-base-100">
               <MailIcon className="w-4 text-inherit " />
             </span>
             <div className="text-left ml-2.5 ">
@@ -48,8 +48,8 @@ const AboutContainer: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="py-2.5 border-b border-base-300 flex items-center">
-            <span className="inline-block p-3 rounded-lg bg-base-100 hover:bg-primary text-primary hover:text-base-100">
+          <div className="py-2.5 border-b border-base-300 flex items-center group">
+            <span className="inline-block p-3 rounded-lg bg-base-100 group-hover:bg-primary text-primary group-hover:text-base-100">
               <LocationMarkerIcon className="w-4 text-inherit" />
             </span>
             <div className="text-left ml-2.5 ">
@@ -62,8 +62,8 @@ const AboutContainer: React.FC = () => {
             className="transition duration-300 hover:text-secondary-focus"
             href="https://github.com/ivo2666"
           >
-            <div className="py-2.5 border-b border-base-300 flex items-center">
-              <span className="inline-block p-3 rounded-lg bg-base-100 hover:bg-secondary text-secondary hover:text-base-100">
+            <div className="py-2.5 border-b border-base-300 flex items-center group">
+              <span className="inline-block p-3 rounded-lg bg-base-100 group-hover:bg-secondary text-secondary group-hover:text-base-100">
                 <svg
                   className="w-4 text-inherit "
                   stroke="currentColor"
