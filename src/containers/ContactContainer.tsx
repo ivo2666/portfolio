@@ -3,12 +3,14 @@ import { SECTIONS } from "../data/data";
 import { ReactComponent as Illustration } from "../assets/email.svg";
 import Input from "../components/Input";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import Alert, { AlertProps } from "../components/Alert";
+import { postEmail } from "../service";
 
-const serviceID = "service_zpwp74o";
-const templateID = "template_6whu90y";
-const publicKey = "WozeZgfLm7ES9xPa4";
+export interface EmailMessage {
+  name: string;
+  email: string;
+  message: string;
+}
 
 const ContactConrainer: React.FC = () => {
   const [name, setName] = useState("");
@@ -21,32 +23,25 @@ const ContactConrainer: React.FC = () => {
   const handleSubmit = () => {
     if (!name || !message || !email) {
       setValidationError(true);
+      setFlag("error");
+      setFeedback("All fields is required!");
       return;
     }
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      message,
-    };
-    emailjs.send(serviceID, templateID, templateParams, publicKey).then(
-      (result) => {
-        setFeedback((m) => {
-          setFlag("success");
-          setTimeout(() => setFlag("none"), 3000);
-          setEmail("");
-          setMessage("");
-          setName("");
-          return "Thank you for the message.";
-        });
-      },
-      (error) => {
-        setFeedback((m) => {
-          setFlag("error");
-          setTimeout(() => setFlag("none"), 3000);
-          return "Something is wrong! Try one more time.";
-        });
+    postEmail({ name, email, message }).then(
+      () => {
+        setFeedback("Thank you for the message.");
+        setFlag("success");
+        setTimeout(() => setFlag("none"), 3000);
+        setEmail("");
+        setMessage("");
+        setName("");
       }
-    );
+    )
+    .catch(() => {
+      setFeedback("Something is wrong! Try one more time.");
+      setFlag("error");
+      setTimeout(() => setFlag("none"), 3000);
+    })
   };
 
   return (
@@ -54,9 +49,9 @@ const ContactConrainer: React.FC = () => {
       <Heading
         heading={SECTIONS[5]}
         id="contact"
-        illustration={<Illustration className=" max-h-48 mx-auto" />}
+        illustration={<Illustration className="mx-auto max-h-48" />}
       />
-      <div className="relative mt-5 sm:mx-10  wrap bg-base-200 rounded-lg">
+      <div className="relative mt-5 rounded-lg sm:mx-10 wrap bg-base-200">
         <div className="p-7 ">
           <h3>I'm always open to discussing job offers and partnerships.</h3>
           <Input
