@@ -14,9 +14,12 @@ const Hero: React.FC<HeroProps> = ({
       className="relative min-h-screen pt-0 mt-0 antialiased hero bg-gradient-to-br from-primary to-primary-content text-base-100"
       id="home"
     >
-
       <div className="flex flex-wrap text-justify hero-content text-neutral-content">
-        <img src={image} alt="person" className="relative max-w-xs mx-auto drop-shadow-xl rounded-2xl lg:bottom-10"/>
+        <img
+          src={image}
+          alt="person"
+          className="relative max-w-xs mx-auto filter saturate-200 contrast-125 drop-shadow-xl rounded-2xl lg:bottom-10"
+        />
 
         <div className="max-w-md ml-10 text-accent-content">
           <motion.div
