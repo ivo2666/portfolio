@@ -3,12 +3,8 @@ import { URL } from "../data/data";
 import { SEOProps } from "../types/types";
 
 const Seo: React.FC<SEOProps> = ({
-  lang,
-  url,
   metaDescription,
-  keywords,
   title,
-  author,
   image: metaImage,
   theme,
 }) => {

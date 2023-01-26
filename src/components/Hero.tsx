@@ -11,7 +11,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <div
-      className="relative min-h-screen pt-0 mt-0 antialiased hero bg-gradient-to-br from-primary to-accent text-base-100"
+      className="relative min-h-screen pt-0 mt-0 antialiased hero bg-gradient-to-br from-primary to-primary-content text-base-100"
       id="home"
     >
 
@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({
             <h1 className="mb-5 text-5xl font-bold ">{greetingText}</h1>
             <p className="mb-5">{greetingDescription}</p>
             <Link
-              to={"experience"}
+              to={"projects"}
               spy={true}
               smooth={true}
               duration={500}

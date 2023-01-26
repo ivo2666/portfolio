@@ -16,7 +16,7 @@ import {
   SkillsProps,
   TimelineProps,
 } from "../types/types";
-export const URL = "https://portfolio-lac.vercel.app/";
+export const URL = "https://portfolio-pi-six-22.vercel.app/";
 export const NAME = "Ivaylo Tsvetkov";
 
 export const SECTIONS = [
