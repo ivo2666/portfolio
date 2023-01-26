@@ -5,6 +5,8 @@ import SoftuniLogo from "../assets/softuni-logo.png";
 import newsApp from "../assets/news-app.png";
 import dealership from "../assets/dealership.png";
 import cookingApp from "../assets/cooking-app.png";
+import brunchyApp from "../assets/brunchy-app.png";
+import accontanApp from "../assets/accountant-app.png";
 import MyPic from "../assets/i.jpg";
 
 import {
@@ -84,6 +86,26 @@ export const IMAGE: ImageType = {
 
 export const projects: ProjectCardProps[] = [
   {
+    id: 6,
+    projectName: "Accountants - App",
+    projectDescription:
+      "A website that presents an accounting firm",
+    projectImageLogo: accontanApp,
+    link: "https://sm-team.org",
+    buttonText: "View Project",
+    tech: ["NextJS", "React JS", "Typescript", "TailwindCSS"],
+  },
+  {
+    id: 5,
+    projectName: "Brunchy - App",
+    projectDescription:
+      "React application for ordering brunch",
+    projectImageLogo: brunchyApp,
+    link: "https://github.com/ivo2666/brunchy-app",
+    buttonText: "View Project",
+    tech: ["React JS", "Typescript", "SASS", "Storybook"],
+  },
+  {
     id: 4,
     projectName: "Cooking - App",
     projectDescription:
@@ -91,7 +113,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: cookingApp,
     link: "https://github.com/ivo2666/cooking-app",
     buttonText: "View Project",
-    tech: ["React", "Typescript", "TailwindCSS", "Vercel Functions"],
+    tech: ["React JS", "Typescript", "TailwindCSS", "Vercel Functions"],
   },
   {
     id: 1,
@@ -101,7 +123,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: `https://picsum.photos/id/1/600/314`,
     link: "https://github.com/ivo2666/portfolio",
     buttonText: "View Project",
-    tech: ["React", "TailwindCSS", "CSS", "Javascript"],
+    tech: ["React JS", "TailwindCSS", "CSS", "Javascript"],
   },
   {
     id: 2,
@@ -111,7 +133,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: newsApp,
     link: "https://github.com/ivo2666/news-app",
     buttonText: "View Project",
-    tech: ["React", "Mui", "Redux", "Redux Saga"],
+    tech: ["React JS", "Material UI", "Redux", "Redux Saga"],
   },
   {
     id: 3,
@@ -121,7 +143,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: dealership,
     link: "https://github.com/ivo2666/car-dealership",
     buttonText: "View Project",
-    tech: ["React", "Express.js", "MongoDB", "Bootstrap"],
+    tech: ["React JS", "Express.js", "MongoDB", "Bootstrap"],
   },
 ];
 /**
