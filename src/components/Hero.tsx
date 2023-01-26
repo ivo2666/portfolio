@@ -20,7 +20,6 @@ const Hero: React.FC<HeroProps> = ({
           alt="person"
           className="relative max-w-xs mx-auto filter saturate-200 contrast-125 drop-shadow-xl rounded-2xl lg:bottom-10"
         />
-
         <div className="max-w-md ml-10 text-accent-content">
           <motion.div
             animate={{ scale: [0.5, 1] }}
@@ -37,6 +36,7 @@ const Hero: React.FC<HeroProps> = ({
             >
               {buttonText}
             </Link>
+            <a className="ml-4 transition rounded-full cursor-pointer btn btn-primary" href="https://res.cloudinary.com/retro-cars/image/upload/v1674752652/samples/xwjl4oegtn1mex6j9pdm.pdf" download> My Resume</a>
           </motion.div>
         </div>
       </div>
