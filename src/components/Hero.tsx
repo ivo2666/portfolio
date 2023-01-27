@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({
             >
               {buttonText}
             </Link>
-            <a className="ml-4 transition rounded-full cursor-pointer btn btn-primary" href="https://res.cloudinary.com/retro-cars/image/upload/v1674752652/samples/xwjl4oegtn1mex6j9pdm.pdf" download> My Resume</a>
+            <a className="ml-4 transition rounded-full cursor-pointer btn btn-primary" href="https://res.cloudinary.com/retro-cars/image/upload/v1674807541/samples/kwfri4boyelccrtoyffg.pdf" download> My Resume</a>
           </motion.div>
         </div>
       </div>
